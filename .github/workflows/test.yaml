@@ -16,6 +16,18 @@ jobs:
           - '1.22'
 
     runs-on: ubuntu-latest
+
+    services:
+      rabbitmq:
+        image: rabbitmq:3.13.4-management
+        env:
+          RABBITMQ_DEFAULT_USER: guest
+          RABBITMQ_DEFAULT_PASS: guest
+          RABBITMQ_DEFAULT_VHOST: amqpextra
+        ports:
+          - 5672:5672
+          - 15672:15672
+
     steps:
       - uses: actions/checkout@v4
 
@@ -28,3 +40,6 @@ jobs:
         env:
           NOMOCKGEN: 1
         run: make unit-test
+
+      - name: e2e-test
+        run: make e2e-test

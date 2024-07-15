@@ -18,9 +18,8 @@ endif
 	$(GOTEST) -race -v -cover -run $(RUNTEST) ./ ./publisher/... ./consumer/...
 
 .PHONY: e2e-test
-## e2e-test: run end-to-end tests within docker with complete infrastructure
 e2e-test:
-	$(MAKE) -C e2e_test run
+	$(GOTEST) -race -v -cover -count=1 ./e2e_test/...
 
 .PHONY: test
 ## test: run linter, unit and e2e tests
