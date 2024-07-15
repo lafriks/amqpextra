@@ -23,12 +23,11 @@ linters-settings:
 linters:
   disable-all: true
   enable:
-    - megacheck
+    - staticcheck
     - revive
     - govet
     - unconvert
-    - megacheck
-    - gas
+    - gosec
     - gocyclo
     - dupl
     - misspell
