@@ -1,4 +1,4 @@
-name: Go
+name: test
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
         with:
           go-version: ${{ matrix.version }}
 
-      - name: Unit test
+      - name: unit-test
         env:
           NOMOCKGEN: 1
         run: make unit-test
