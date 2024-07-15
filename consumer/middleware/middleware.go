@@ -3,7 +3,7 @@ package middleware
 import (
 	"context"
 
-	"github.com/makasim/amqpextra/consumer"
+	"github.com/lafriks/amqpextra/consumer"
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 

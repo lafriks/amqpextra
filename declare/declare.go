@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/makasim/amqpextra"
+	"github.com/lafriks/amqpextra"
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 

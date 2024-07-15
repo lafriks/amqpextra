@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/makasim/amqpextra/consumer/middleware"
+	"github.com/lafriks/amqpextra/consumer/middleware"
 	amqp "github.com/rabbitmq/amqp091-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

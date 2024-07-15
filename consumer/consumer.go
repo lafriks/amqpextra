@@ -10,7 +10,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/makasim/amqpextra/logger"
+	"github.com/lafriks/amqpextra/logger"
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 

@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/makasim/amqpextra"
-	"github.com/makasim/amqpextra/consumer"
-	amqpextralogger "github.com/makasim/amqpextra/logger"
+	"github.com/lafriks/amqpextra"
+	"github.com/lafriks/amqpextra/consumer"
+	amqpextralogger "github.com/lafriks/amqpextra/logger"
 )
 
 type Option func(p *Pool)

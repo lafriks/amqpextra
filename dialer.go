@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/makasim/amqpextra/consumer"
-	"github.com/makasim/amqpextra/logger"
-	"github.com/makasim/amqpextra/publisher"
+	"github.com/lafriks/amqpextra/consumer"
+	"github.com/lafriks/amqpextra/logger"
+	"github.com/lafriks/amqpextra/publisher"
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 

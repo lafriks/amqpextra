@@ -7,13 +7,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/makasim/amqpextra/consumerpool"
+	"github.com/lafriks/amqpextra/consumerpool"
 	amqp "github.com/rabbitmq/amqp091-go"
 	"go.uber.org/goleak"
 
-	"github.com/makasim/amqpextra"
-	"github.com/makasim/amqpextra/consumer"
-	"github.com/makasim/amqpextra/e2e_test/helper/rabbitmq"
+	"github.com/lafriks/amqpextra"
+	"github.com/lafriks/amqpextra/consumer"
+	"github.com/lafriks/amqpextra/e2e_test/helper/rabbitmq"
 	"github.com/stretchr/testify/require"
 )
 

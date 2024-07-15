@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/makasim/amqpextra/consumer"
-	"github.com/makasim/amqpextra/logger"
+	"github.com/lafriks/amqpextra/consumer"
+	"github.com/lafriks/amqpextra/logger"
 	amqp "github.com/rabbitmq/amqp091-go"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"

@@ -3,7 +3,7 @@ package logger
 import "log"
 
 var (
-	Discard = Func(func(format string, v ...interface{}) {})
+	Discard = Func(func(_ string, _ ...interface{}) {})
 	Std     = Func(log.Printf)
 )
 

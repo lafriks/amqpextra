@@ -7,15 +7,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/mock/gomock"
 	amqp "github.com/rabbitmq/amqp091-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
+	"go.uber.org/mock/gomock"
 
-	"github.com/makasim/amqpextra/logger"
-	"github.com/makasim/amqpextra/publisher"
-	"github.com/makasim/amqpextra/publisher/mock_publisher"
+	"github.com/lafriks/amqpextra/logger"
+	"github.com/lafriks/amqpextra/publisher"
+	"github.com/lafriks/amqpextra/publisher/mock_publisher"
 )
 
 func TestNotify(main *testing.T) {

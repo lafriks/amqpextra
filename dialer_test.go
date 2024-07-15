@@ -9,14 +9,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/mock/gomock"
-	"github.com/makasim/amqpextra"
-	"github.com/makasim/amqpextra/logger"
-	"github.com/makasim/amqpextra/mock_amqpextra"
+	"github.com/lafriks/amqpextra"
+	"github.com/lafriks/amqpextra/logger"
+	"github.com/lafriks/amqpextra/mock_amqpextra"
 	amqp "github.com/rabbitmq/amqp091-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
+	"go.uber.org/mock/gomock"
 )
 
 // nolint:gosimple // the purpose of select case is to stress the connCh close case.
