@@ -1,4 +1,4 @@
-# Extra features for streadway/amqp package
+# Extra features for rabbitmq/amqp091-go package
 
 [Documentation](https://pkg.go.dev/github.com/lafriks/amqpextra#section-documentation)
 
