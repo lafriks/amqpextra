@@ -1,0 +1,30 @@
+name: Go
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        version:
+          - '1.20'
+          - '1.21'
+          - '1.22'
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ matrix.version }}
+
+      - name: Unit test
+        env:
+          NOMOCKGEN: 1
+        run: make unit-test
